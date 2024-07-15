@@ -1,13 +1,12 @@
 import sys
-import heapq
 
 input = sys.stdin.readline
 
 n = int(input().rstrip())
-heap = []
+result = []
 
 for _ in range(n):
-    heapq.heappush(heap, int(input().rstrip()))
-
-for _ in range(n):
-    print(heapq.heappop(heap))
+    result.append(int(input().rstrip()))
+    
+result.sort()
+print(*result, sep='\n')
