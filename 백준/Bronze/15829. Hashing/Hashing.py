@@ -17,4 +17,4 @@ for i in range(L):
     a = alpha.find(word) + 1
     result += a*r**i
 
-print(result)
+print(result%M)
