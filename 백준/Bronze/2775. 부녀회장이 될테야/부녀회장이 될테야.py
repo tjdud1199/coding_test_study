@@ -11,7 +11,7 @@ for _ in range(t):
     for i in range(1,k+1):
         for j in range(n):
             if j == 0:
-                rooms[i][j] = rooms[i-1][j]
+                rooms[i][j] = 1
             else:
                 rooms[i][j] = rooms[i][j-1] + rooms[i-1][j]
     print(rooms[k][n-1])
