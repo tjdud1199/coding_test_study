@@ -18,6 +18,7 @@ for _ in range(int(input().rstrip())):
         sign.append('-')
     elif check > num:
         temp = False
+        break
     else:
         stack.append(check)
     
