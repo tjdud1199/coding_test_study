@@ -3,11 +3,9 @@ from collections import deque
 
 input = sys.stdin.readline
 n = int(input().rstrip())
-p = int(input().rstrip())
-
 graph = [[] for _ in range(n+1)]
 
-for _ in range(p):
+for _ in range(int(input().rstrip())):
     x, y = map(int, input().split())
     graph[x].append(y)
     graph[y].append(x)
